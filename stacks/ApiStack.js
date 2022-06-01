@@ -12,6 +12,7 @@ export function ApiStack({ stack, app }) {
                 environment: {
                     TABLE_NAME: table.tableName,
                 },
+                authorizer: "iam"
             },
         },
         routes: {
